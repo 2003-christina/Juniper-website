@@ -1,0 +1,92 @@
+.mainlargepara {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 900;
+  font-size: 7rem;
+  font-style: normal;
+}
+.moto {
+  font-size: 3rem;
+}
+.mainlargepara2 {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: normal;
+}
+
+.moto2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Bowlby One", sans-serif;
+}
+.exps1 span {
+  font-size: 4rem;
+}
+.link {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+.oimg {
+  transition: transform 0.5s ease-in-out;
+}
+.work1:hover .oimg {
+  transform: translateX(50%);
+}
+.work1:hover .link {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.accordion {
+  --bs-accordion-active-bg: white;
+  --bs-accordion-active-color: black;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button {
+  border: 1px solid black;
+}
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border: none;
+}
+.accordion-button:has(.accordion-body:not(.collapsed)) {
+  border: none;
+}
+@media screen and (max-width: 995px) {
+  .belowfaq {
+    flex-direction: column-reverse;
+  }
+  .personimg {
+    width: 100%;
+  }
+  .first {
+    width: 100%;
+  }
+  .second {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainlargepara {
+    font-size: 4rem;
+    word-wrap: break-word;
+  }
+  .mainlargepara2 {
+    font-size: 4rem;
+    word-wrap: break-word;
+  }
+  .moto {
+    font-size: 2rem;
+  }
+}
